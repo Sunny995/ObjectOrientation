@@ -7,7 +7,7 @@ namespace Principles
     public class Seller
     {
 
-        public void FruitsAvailable(string name)
+        public void GetName(string name)
         {
             
             Console.WriteLine(name);
