@@ -6,9 +6,9 @@ namespace Principles
 {
    public class Manufacturer
     {
-        public Car CarCreator()
+        public Car CarCreator(string name, int cost)
         {
-            return new Car();
+            return new Car(name, cost);
         }
         public Bike BikeCreator()
         {
