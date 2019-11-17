@@ -6,16 +6,27 @@ namespace Principles
 {
     public class Delivery 
     {
-        IDeliveryService _deliveryService;
+        IDeliveryService deliveryService;
 
+       
+        // #this
+        public Delivery(): this (new DeliveryService())
+        {
+
+        }
         public Delivery(IDeliveryService deliveryService)
         {
-            _deliveryService = deliveryService;
+            //use of "this" Keyword
+
+            this.deliveryService = deliveryService;
+            this.deliver();
+
         }
 
         public void deliver()
         {
-           Console.WriteLine("Delivered To"+ " "+_deliveryService.getBuyers());
+            //use of #this
+           Console.WriteLine("Delivered To"+ " "+this.deliveryService.getBuyers());
         }
     }
 }
