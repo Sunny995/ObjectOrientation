@@ -16,7 +16,7 @@ namespace Principles
             new Showroom().Showcase(manufacturer.CarCreator());
            Bike b =  manufacturer.BikeCreator();
             b.Name = "harsh";
-            new Seller().FruitsAvailable(b.Name);
+            new Seller().GetName(b.Name);
 
             //Maintaining States with respect to objects of classes.
 
